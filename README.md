@@ -1,32 +1,38 @@
 # dvcs-labs
 Practicing use of version control systems
 
-Members: 
+### Lab 2 Work Progess -- Google spreadsheet
 
-* Буланкин
-* Головинова
-* Денисов
-* Донцов
-* Ибрагим
-* Калинкин
-* Катышев
-* Ковалев
-* Курносов
-* Курылев
-* Махоткин
-* Михайлов
-* Поликарпова
-* Рассадников
+<https://docs.google.com/spreadsheets/d/1ow8TGp_ECF-sEUpCJEwl9JnryM99T4BDTGYO26WDds0/edit#gid=0>
 
-Git Bash Tips
-=============
+### Members: 
+
+1. Буланкин
+1. Головинова
+1. Денисов
+1. Донцов
+1. Ибрагим
+1. Калинкин
+1. Катышев
+1. Ковалев
+1. Курносов
+1. Курылев
+1. Махоткин
+1. Михайлов
+1. Поликарпова
+1. Рассадников
+
+#### Git Bash Tips
 
 * Create branches command:
-`for VAR in Bulankin  Golovinova  Denisov  Dontsov  Ibragim  Kalinkin  Katyshev  Kovalev  Kurnosov  Kurylev  Mahotkin  Mihailov  Polikarpova  Rassadnikov
+
+<pre>$ for VAR in Bulankin  Golovinova  Denisov  Dontsov  Ibragim  Kalinkin  Katyshev  Kovalev  Kurnosov  Kurylev  Mahotkin  Mihailov  Polikarpova  Rassadnikov
 do
 git branch $VAR
-done`
+done
+</pre>
 
 
-* Do not ask login & password every time you `git push`:
-`git config --global credential.helper store`
+* Do not ask login & password every time you run `git push`:
+
+    `$ git config --global credential.helper store`
