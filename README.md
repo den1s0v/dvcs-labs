@@ -21,12 +21,13 @@ Practicing use of version control systems
 1. Михайлов
 1. Поликарпова
 1. Рассадников
+1. Roby De-Visser
 
 #### Git Bash Tips
 
 * Create branches command:
 
-<pre>$ for VAR in Bulankin  Golovinova  Denisov  Dontsov  Ibragim  Kalinkin  Katyshev  Kovalev  Kurnosov  Kurylev  Mahotkin  Mihailov  Polikarpova  Rassadnikov
+<pre>$ for VAR in Bulankin  Golovinova  Denisov  Dontsov  Ibragim  Kalinkin  Katyshev  Kovalev  Kurnosov  Kurylev  Mahotkin  Mihailov  Polikarpova  Rassadnikov Roby
 do
 git branch $VAR
 done
