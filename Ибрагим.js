@@ -15,7 +15,7 @@ export class Sample extends Component {
         super(props);
 		
 		this.state = { 
-			show: false,
+			show: true,
 			canSolve: true
 		};
 		
