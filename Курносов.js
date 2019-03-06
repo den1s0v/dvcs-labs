@@ -13,9 +13,12 @@ class App extends Component {
     return (
       <div>
         <NavBar></NavBar>
+		<span> Тут что-то будет (Продолжение следует) </span>
         <Route path="/" exact component={Index} />
-        <Route path="/tasks" component={Samples} />
+        <Route path="/newUtlToTasks" component={Samples} />
       </div>
+	  
+	  
     )
   }
 }
