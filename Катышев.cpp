@@ -51,6 +51,9 @@ void RegisterWorkerDialog::registerWorker() {
 	QString date = ui.dateHiringDateEdit->date().toString("dd.MM.yyyy");
 	QString login = ui.loginLineEdit->text();
 	QString passwordHash = QString(QCryptographicHash::hash(ui.passwordLineEdit->text().toUtf8(), QCryptographicHash::Md5));
+	
+	//Новый комментарий
+	int i = 0;
 
 	//Запрос к БД
 	//Еще комментарий
