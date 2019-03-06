@@ -79,7 +79,7 @@ export class Index extends Component {
 			} );
 		}
 	}
-	
+	//Another commit to master
 	logout() {
 		
 		localStorage.setItem("userToken", "null");
