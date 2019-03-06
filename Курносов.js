@@ -17,6 +17,7 @@ class App extends Component {
 		<span> Тут что-то будет (Продолжение следует) </span>
         <Route path="/" exact component={Index} />
         <Route path="/newUtlToTasks" component={Samples} />
+		<span> Some more changes(part of commit 2)</span>
       </div>
 	  
 	  
