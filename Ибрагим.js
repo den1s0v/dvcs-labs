@@ -49,10 +49,7 @@ export class Sample extends Component {
 				
 			this.setState( { canSolve:false } );
 			
-		} else {
-			
-			alert("It's wrong answer");
-		}
+		} 
 	}
 	
     render () {
