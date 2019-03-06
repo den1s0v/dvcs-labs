@@ -52,9 +52,7 @@ export class MySamples extends Component {
 		return (
 			<Container><Row><Col md={{ span: 5, offset: 3}}>
 				<br />
-
 				<Table striped bordered hover variant="dark">
-				
 					<thead>
 						<tr>
 						<th>Title</th>
@@ -63,11 +61,9 @@ export class MySamples extends Component {
 						<th>Wrong lines</th>
 						</tr>
 					</thead>
-					
 					<tbody>
 						{this.state.tableBody}
 					</tbody>
-				
 				</Table>
 			</Col></Row></Container>);
 	}
