@@ -63,7 +63,7 @@ ClientWindow::ClientWindow(QWidget *parent) : QMainWindow(parent) {
 	connect(ui.workerExitAction, SIGNAL(triggered()), this, SLOT(exitFromAccount()));
 	connect(ui.headExitAction, SIGNAL(triggered()), this, SLOT(exitFromAccount()));
 	
-	connect(ui.showStatisticsButton, SIGNAL(clicked()), this, SLOT(showStartPageStatistic()));
+	/*connect(ui.showStatisticsButton, SIGNAL(clicked()), this, SLOT(showStartPageStatistic()));
 	connect(ui.createSalaryStatisticButton, SIGNAL(clicked()), this, SLOT(showSettingsSalaryStatistic()));
 	connect(ui.createWorkerStatisticButton, SIGNAL(clicked()), this, SLOT(showSettingsWorkerStatistic()));
 	connect(ui.backStatisticButton, SIGNAL(clicked()), this, SLOT(showStartPageStatistic()));
@@ -74,7 +74,7 @@ ClientWindow::ClientWindow(QWidget *parent) : QMainWindow(parent) {
 	connect(ui.registerNewWorkerButton, SIGNAL(clicked()), this, SLOT(getRegisterWorkerDialog()));
 	connect(ui.createNewProductionTypeButton, SIGNAL(clicked()), this, SLOT(getCreateProductionTypeDialog()));
 	connect(ui.createNewRecordButton, SIGNAL(clicked()), this, SLOT(getCreateProductionDialog()));
-
+	*/
 	connect(ui.workersTableWidget, SIGNAL(itemSelectionChanged()), this, SLOT(showWorkerData()));
 	connect(ui.editWorkerInfoButton, SIGNAL(clicked()), this, SLOT(showEditWorkerInfo()));
 	connect(ui.saveWorkerInfoButton, SIGNAL(clicked()), this, SLOT(saveEditWorkerInfo()));
