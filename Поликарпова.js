@@ -10,8 +10,7 @@ import Table from 'react-bootstrap/lib/Table'
 
 export class MySamples extends Component {
     constructor(props) {
-        super(props);
-		
+        super(props);	
 		this.state = {
 			tableBody: []
 		}
@@ -22,24 +21,21 @@ export class MySamples extends Component {
 	}
 	
 	tick() {
-		let tableBody = [];
-		
+		let tableBody = [];	
 		fetch('/api/samples/getUserSamples', {
 									method: 'POST',
 									body: JSON.stringify({}),
 									headers: new Headers({"Content-Type": "application/json", "authorization":localStorage.userToken})
 		}).then(response => response.json()).then(samples => {
 									
-			for(const sample of samples) {
-				
+			for(const sample of samples) {			
 				tableBody.push( (<tr>
 						<td>{sample.title}</td>
 						<td>{sample.answer}</td>
 						<td>{sample.greenLines}</td>
 						<td>{sample.redLines}</td>
 					</tr>) );
-			}
-			
+			}			
 			this.setState( { tableBody: tableBody} );
 		} );
 	}
