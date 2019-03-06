@@ -7,11 +7,12 @@ import Button from 'react-bootstrap/lib/Button'
 
 import { GoogleButton } from "./social-buttons/GoogleButton";
 import { VkButton } from "./social-buttons/VkButton";
-
+// Mahotkin commit 2
 export class Login extends Component {
     constructor(props) {
         super(props);
 	}
+	// Mahotkin commit 2
 	
 	login() {
 		
@@ -26,7 +27,7 @@ export class Login extends Component {
 			alert("Log in...");
 			fetch('/api/login', {
 									method: 'POST',
-									body: JSON.stringify({email: email, password: password}),
+										body: JSON.stringify({email: email, password: password}),
 									headers: new Headers({"Content-Type": "application/json"})
 								})
 			.then(response => response.json()).then(userInfo => {
@@ -40,7 +41,9 @@ export class Login extends Component {
 					window.localStorage.setItem("userToken", JSON.stringify(userInfo.token));
 					console.log(window.localStorage.getItem("userToken"));
 //					console.log(JSON.stringify(userInfo, null, 2));
+
 					console.log();
+					// Mahotkin branch commit 2
 				}
 			});
 		}
