@@ -12,6 +12,7 @@ class App extends Component {
   render() {
     return (
       <div>
+		<span> Some other changes </span>
         <NavBar></NavBar>
 		<span> Тут что-то будет</span>
         <Route path="/" exact component={Index} />
