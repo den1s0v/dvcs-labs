@@ -133,14 +133,7 @@ export class LoginOrSignup extends Component {
 					</Col>
 					<Col></Col>
 				</Row>
-				{/*	<Row>
-						<Col></Col>
-						<Col>
-							<VkButton/>
-						</Col>
-						<Col></Col>
-					</Row>
-				*/}
+				{}
 			</Container>
 		</div> );
 	}

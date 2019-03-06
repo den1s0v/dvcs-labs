@@ -16,6 +16,12 @@ ClientWindow::ClientWindow(QWidget *parent) : QMainWindow(parent) {
 	spinBoxDelegate = new SpinBoxDelegate(this);
 
 	//Стартовая настройка главного окна
+	//Изменения для первого коммита в мастер
+	/*
+	ui.setupUi(this);
+	ui.completedWorksTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+	ui.completedWorksTableWidget->setColumnHidden(0, true);
+	*/
 	ui.setupUi(this);
 	ui.completedWorksTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 	ui.completedWorksTableWidget->setColumnHidden(0, true);
