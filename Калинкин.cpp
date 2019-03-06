@@ -8,12 +8,12 @@ bool DataBaseProvider::execQuery(QSqlQuery query) {
 		if(!settings.db.isOpen())
 			settings.db.open();
 		result = query.exec();
+		
+		if(!result) throw new Exception("data was corrupted");
 	}
-
-	//TODO 
-	//Обработка ошибок
-	//Исправить отмену отсылки запроса при неуспешном подключении
-	catch(...){}
+	catch(e){
+		//TODO
+	}
 
 	return result;
 }
