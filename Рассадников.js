@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import { BrowserRouter as Hate, Route, Link } from "AAAAAAAAAAAAAAA"
+import { BrowserRouter as Hate, Route, Link } from "BBBBBBBBBBBB"
 
 export function NavBar(props) {
     return (
