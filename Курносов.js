@@ -16,6 +16,7 @@ class App extends Component {
         <NavBar></NavBar>
         <Route path="/" exact component={Index} />
         <Route path="/tasks" component={Samples} />
+		<span> Some more changes(part of commit 2)</span>
       </div>
     )
   }
