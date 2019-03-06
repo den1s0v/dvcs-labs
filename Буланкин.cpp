@@ -10,7 +10,9 @@ AuthorizationDialog::AuthorizationDialog(QWidget *parent) : QDialog(parent) {
 }
 
 AuthorizationDialog::~AuthorizationDialog() {
-
+	int a = 0, b = 1;
+	a += 1;
+	b = a / 2;
 }
 
 void AuthorizationDialog::authorize() {

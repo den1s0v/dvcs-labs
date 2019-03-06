@@ -22,6 +22,7 @@ void RegisterWorkerDialog::cancelRegister() {
 	reject();
 }
 
+//Комментарий
 void RegisterWorkerDialog::registerWorker() {
 	QString errorMsg = QString();
 	if (ui.fioLineEdit->text().isEmpty()) {
@@ -65,6 +66,7 @@ void RegisterWorkerDialog::registerWorker() {
 		return;
 	}
 
+	//Еще комментарий
 	QSqlQuery query = DataBaseProvider::getQuery();
     query.prepare("INSERT INTO user (login, password, fio) VALUES (?, ?, ?)");
     query.addBindValue(login);
