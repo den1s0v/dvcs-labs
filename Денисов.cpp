@@ -73,6 +73,9 @@ QComboBox* CreateProductionDialog::setComboBox() {
 	return comboBox;
 }
 
+/** This is my first commit to `master` branch
+	An informative documenting comment for setSpinBox() method.
+*/
 QSpinBox* CreateProductionDialog::setSpinBox() {
 	QSpinBox* spinBox = new QSpinBox(this);
 	spinBox->setMinimum(1);
