@@ -12,7 +12,7 @@ bool DataBaseProvider::execQuery(QSqlQuery query) {
 		if(!result) throw new Exception("data was corrupted");
 	}
 	catch(e){
-		//TODO
+		writeToLog(dbExceptionInfo());
 	}
 
 	return result;
