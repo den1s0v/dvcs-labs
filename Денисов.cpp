@@ -16,7 +16,7 @@ CreateProductionDialog::CreateProductionDialog(int userId, QWidget *parent) : QD
 }
 
 CreateProductionDialog::~CreateProductionDialog() {
-
+ // my second commit to master
 }
 
 void CreateProductionDialog::cancelCreate() {
