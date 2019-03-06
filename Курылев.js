@@ -139,7 +139,8 @@ export class Index extends Component {
 								<th>Wrong lines</th>
 								</tr>
 							</thead>
-							
+							<tab>
+							</tab>
 							<tbody>
 								{this.state.tableBody}
 							</tbody>
