@@ -101,46 +101,6 @@ export class LoginOrSignup extends Component {
 						  </Button>
 						</Form>
 					</Col>
-					
-					<Col md={{span:4, offset:1}}>
-						<Form>
-						  <Form.Label>Sign Up</Form.Label>
-						  <Form.Group controlId="email">
-							<Form.Label>Email</Form.Label>
-							<Form.Control id="emailSignup" type="email" placeholder="Enter email" />	
-						  </Form.Group>
-
-						  <Form.Group controlId="password">
-							<Form.Label>Password</Form.Label>
-							<Form.Control id="passwordSignup" type="password" placeholder="Password" />
-						  </Form.Group>
-						  
-						  <Button variant="primary" onClick={this.signup}>
-							Sign Up
-						  </Button>
-						</Form>
-					</Col>
-				</Row>
-				
-				<br />
-				<br />
-				<br />
-				
-				<Row>
-					<Col></Col>
-					<Col>
-						<GoogleButton/>
-					</Col>
-					<Col></Col>
-				</Row>
-				{/*	<Row>
-						<Col></Col>
-						<Col>
-							<VkButton/>
-						</Col>
-						<Col></Col>
-					</Row>
-				*/}
 			</Container>
 		</div> );
 	}
