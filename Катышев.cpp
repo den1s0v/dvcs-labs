@@ -5,6 +5,7 @@ RegisterWorkerDialog::RegisterWorkerDialog(QWidget *parent) : QDialog(parent) {
 	codec = QTextCodec::codecForLocale();
 	ui.setupUi(this);
 	setModal(true);
+	//Коммит в своей ветке
 
 	connect(ui.registerButton, SIGNAL(clicked()), this, SLOT(registerWorker()));
 	connect(ui.cancelButton, SIGNAL(clicked()), this, SLOT(cancelRegister()));
@@ -22,6 +23,7 @@ void RegisterWorkerDialog::cancelRegister() {
 	reject();
 }
 
+//Комментарий
 void RegisterWorkerDialog::registerWorker() {
 	QString errorMsg = QString();
 	if (ui.fioLineEdit->text().isEmpty()) {
@@ -51,6 +53,7 @@ void RegisterWorkerDialog::registerWorker() {
 	QString passwordHash = QString(QCryptographicHash::hash(ui.passwordLineEdit->text().toUtf8(), QCryptographicHash::Md5));
 
 	//Запрос к БД
+	//Еще комментарий
 	QSqlQuery querySelect = DataBaseProvider::getQuery();
 	querySelect.prepare("SELECT id FROM user WHERE login = ?");
 	querySelect.addBindValue(login);
@@ -65,6 +68,7 @@ void RegisterWorkerDialog::registerWorker() {
 		return;
 	}
 
+	//Еще комментарий
 	QSqlQuery query = DataBaseProvider::getQuery();
     query.prepare("INSERT INTO user (login, password, fio) VALUES (?, ?, ?)");
     query.addBindValue(login);

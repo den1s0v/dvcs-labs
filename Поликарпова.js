@@ -18,13 +18,10 @@ export class MySamples extends Component {
 	}
 	
 	componentDidMount() {
-		//console.log("MS-componentDidMount");
 		this.tick();
 	}
 	
 	tick() {
-		//console.log("MS-tick");
-		
 		let tableBody = [];
 		
 		fetch('/api/samples/getUserSamples', {
@@ -48,13 +45,10 @@ export class MySamples extends Component {
 	}
   
     render () {
-		//console.log("MS-render");
 		return (
 			<Container><Row><Col md={{ span: 5, offset: 3}}>
 				<br />
-
 				<Table striped bordered hover variant="dark">
-				
 					<thead>
 						<tr>
 						<th>Title</th>
@@ -63,11 +57,9 @@ export class MySamples extends Component {
 						<th>Wrong lines</th>
 						</tr>
 					</thead>
-					
 					<tbody>
 						{this.state.tableBody}
 					</tbody>
-				
 				</Table>
 			</Col></Row></Container>);
 	}
