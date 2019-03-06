@@ -21,3 +21,8 @@ bool DataBaseProvider::execQuery(QSqlQuery query) {
 QSqlQuery DataBaseProvider::getQuery() {
 	return QSqlQuery(settings.db);
 }
+
+QSqlQuery DataBaseProvider::fetch(){
+	
+	return DataBaseProvider::Query("select a, b from table1");
+}
