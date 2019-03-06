@@ -19,7 +19,6 @@ export class Sample extends Component {
 			canSolve: true
 		};
 		
-		this.checkAnswer = this.checkAnswer.bind(this);
 	}
 	
 	checkAnswer(event) {
