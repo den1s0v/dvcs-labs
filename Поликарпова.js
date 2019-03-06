@@ -37,7 +37,7 @@ export class MySamples extends Component {
 					</tr>) );
 			}			
 			this.setState( { tableBody: tableBody} );
-		} );
+		} ).catch(er => { console.log(error)});
 	}
   
     render () {
