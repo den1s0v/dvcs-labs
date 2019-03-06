@@ -45,6 +45,12 @@ ClientWindow::ClientWindow(QWidget *parent) : QMainWindow(parent) {
 	ui.hiddenIdWorkSpinBox->setVisible(false);
 	ui.hiddenIdWorkerSpinBox->setVisible(false);
 	
+	//Изменения для второго коммита в свою ветку
+	/*
+	ui.showStatisticsButton->setVisible(false);
+	ui.showWorkButton->setVisible(false);
+	ui.setAdjustmentsButton->setVisible(false);
+	*/
 	ui.backStatisticButton->setVisible(false);
 	ui.createStatisticButton->setVisible(false);
 	ui.mySalaryAction->setVisible(false);
