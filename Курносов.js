@@ -12,6 +12,7 @@ class App extends Component {
   render() {
     return (
       <div>
+		<span> Some other changes </span>
         <NavBar></NavBar>
         <Route path="/" exact component={Index} />
         <Route path="/tasks" component={Samples} />
