@@ -84,6 +84,10 @@ void RegisterWorkerDialog::registerWorker() {
 	query.addBindValue(date);
     query.addBindValue(userId);
 	success = DataBaseProvider::execQuery(query);
+	
+	//Комментарий
+	int i = 0;
+	
 
 	QString stringIdWorker(QString().setNum(ClientWindow::getMaxIdWorker()));
 	QString newPeriod(QString().setNum(ClientWindow::getMaxIdBillingPeriod()));

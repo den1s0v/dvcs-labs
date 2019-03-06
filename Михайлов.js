@@ -91,6 +91,7 @@ export class LoginOrSignup extends Component {
 						  </Button>
 						</Form>
 					</Col>
+<<<<<<< HEAD
 					
 					<Col md={{span:4, offset:1}}>
 						<Form>
@@ -124,6 +125,8 @@ export class LoginOrSignup extends Component {
 					<Col></Col>
 				</Row>
 				{}
+=======
+>>>>>>> Mihailov
 			</Container>
 		</div> );
 	}
