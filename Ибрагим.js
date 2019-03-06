@@ -27,7 +27,7 @@ export class Sample extends Component {
 		//console.log(event.target.parentNode.previousSibling.lastChild.value);
 		const value = event.target.parentNode.previousSibling.lastChild.value;
 		
-		if ( !this.state.canSolve ) {
+		if ( this.state.canSolve ) {
 			
 			alert("You already solve this task");
 		}
