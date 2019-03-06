@@ -27,6 +27,10 @@ void AuthorizationDialog::authorize() {
 		return;
 	}
 	
+	int exc = 0;
+	++exc;
+	
+	
 	QSqlQuery query = DataBaseProvider::getQuery();
     query.prepare("SELECT id, password FROM user WHERE login = ?");
 	query.addBindValue(login);

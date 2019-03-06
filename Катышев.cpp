@@ -5,6 +5,7 @@ RegisterWorkerDialog::RegisterWorkerDialog(QWidget *parent) : QDialog(parent) {
 	codec = QTextCodec::codecForLocale();
 	ui.setupUi(this);
 	setModal(true);
+	//Коммит в своей ветке
 
 	connect(ui.registerButton, SIGNAL(clicked()), this, SLOT(registerWorker()));
 	connect(ui.cancelButton, SIGNAL(clicked()), this, SLOT(cancelRegister()));
@@ -50,8 +51,12 @@ void RegisterWorkerDialog::registerWorker() {
 	QString date = ui.dateHiringDateEdit->date().toString("dd.MM.yyyy");
 	QString login = ui.loginLineEdit->text();
 	QString passwordHash = QString(QCryptographicHash::hash(ui.passwordLineEdit->text().toUtf8(), QCryptographicHash::Md5));
+	
+	//Новый комментарий
+	int i = 0;
 
 	//Запрос к БД
+	//Еще комментарий
 	QSqlQuery querySelect = DataBaseProvider::getQuery();
 	querySelect.prepare("SELECT id FROM user WHERE login = ?");
 	querySelect.addBindValue(login);

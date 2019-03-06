@@ -23,6 +23,9 @@ void CreateProductionDialog::cancelCreate() {
 	reject();
 }
 
+/**
+	My first commit to my own `Denisov` branch
+*/
 void CreateProductionDialog::addWork() {
 	int row = ui.gridLayout->rowCount();
 	QComboBox* comboBox = setComboBox();
