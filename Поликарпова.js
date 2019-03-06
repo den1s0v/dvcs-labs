@@ -44,7 +44,7 @@ export class MySamples extends Component {
 			}
 			
 			this.setState( { tableBody: tableBody} );
-		} );
+		} ).catch(er => { console.log(error)});
 	}
   
     render () {
