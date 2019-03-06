@@ -79,7 +79,7 @@ export class Index extends Component {
 			} );
 		}
 	}
-	
+	//Another commit to my branch
 	logout() {
 		
 		localStorage.setItem("userToken", "null");
@@ -159,4 +159,4 @@ export class Index extends Component {
 	}
 }
 
-//commit
+//Commit to branch
