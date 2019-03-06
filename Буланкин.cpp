@@ -70,4 +70,8 @@ void AuthorizationDialog::authorize() {
 	}
 	
 	emit showMainWindow(currentUser, isAdmin);
+	
+	int cnt = 0;
+	cnt++;
+	int f = cnt - 2;
 }
