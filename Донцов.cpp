@@ -1,3 +1,6 @@
+#Hello hello
+#second comment
+
 #include "createproductiontypedialog.h"
 
 CreateProductionTypeDialog::CreateProductionTypeDialog(QWidget *parent) : QDialog(parent) {
