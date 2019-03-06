@@ -40,7 +40,9 @@ export class Login extends Component {
 					window.localStorage.setItem("userToken", JSON.stringify(userInfo.token));
 					console.log(window.localStorage.getItem("userToken"));
 //					console.log(JSON.stringify(userInfo, null, 2));
+
 					console.log();
+					// Mahotkin branch commit 2
 				}
 			});
 		}
