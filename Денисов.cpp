@@ -20,6 +20,7 @@ CreateProductionDialog::~CreateProductionDialog() {
 }
 
 void CreateProductionDialog::cancelCreate() {
+	// My second commit to my own `Denisov` branch
 	reject();
 }
 
