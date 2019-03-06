@@ -9,7 +9,7 @@ SpinBoxDelegate::~SpinBoxDelegate() {
 }
 
 QWidget* SpinBoxDelegate::createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const {
-
+	// СПАСИТИ ПАЖАЛСТА ИЗ ВЕТКИ КОВАЛЕВА
     QSpinBox *editor = new QSpinBox(parent);
     editor->setMinimum(0);
     editor->setMaximum(100);
